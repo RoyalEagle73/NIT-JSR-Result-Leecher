@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 #LISTS AND DATA STRUCTURES TO BE USED
-data_to_print = ""
+data_to_print = "Roll No,   Name,"
 
 print("*************** Welcoome To NIT JSR Result Leecher ***************")
 print("For more work, find me @ Github.com/RoyalEagle73\n\n\n")
@@ -11,7 +11,7 @@ print("For more work, find me @ Github.com/RoyalEagle73\n\n\n")
 roll_no = input("Enter Roll Number without last digits :\n(For example enter 2018PGCACA if your class is of batch 2018 and MCA) :\n")       ## (YEAR CAN BE CHANGED ACCORDINGLY )
 
 
-roll_no_int = int(input("Enter Initial Roll Number :\n"))
+roll_no_int = 1
 
 
 final_roll = int(input("Enter Last Roll Number of Class :\n"))
@@ -28,9 +28,9 @@ driver.get("http://14.139.205.172/web_new/Default.aspx")
 
 temp_count = 1
 while temp_count<semester_count+1:
-	data_to_print += "SGPA(Sem %d),"%(temp_count)
+	data_to_print += "   SGPA(Sem %d),"%(temp_count)
 	temp_count +=1
-data_to_print += "Final CGPA\n"
+data_to_print += "Final CGPA"
 
 result = []
 roll_list = []
@@ -104,9 +104,9 @@ while roll_no_int!=final_roll+1:			## ( LIMIT CAN BE PLACED HERE )
 driver.close()
 
 
-file_name = roll_no_temp + ".xlsx"
-data_to_print += "For more work, find me @ Github.com/RoyalEagle73\n"
+file_name = roll_no_temp + ".csv"
+data_to_print += "\nFor more work, find me @ Github.com/RoyalEagle73\n"
 with open(file_name, "w") as result:
 	result.write(data_to_print)
 
-print("Successfully generated file with name %s at script location..........")%(file_name)
+print("Successfully generated file with name %s at script location.........."%(file_name))
