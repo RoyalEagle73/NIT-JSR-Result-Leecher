@@ -74,12 +74,12 @@ while roll_no_int!=final_roll+1:			## ( LIMIT CAN BE PLACED HERE )
 					enter_button.click()
 
 					if temp_count == 1:	
-						sgpa =driver.find_element_by_id("lblCPI")
+						sgpa =driver.find_element_by_id("lblSPI")
 						name = driver.find_element_by_id("lblStudentName")
 						#print(roll_no_int,name.text, sgpa.text, end=" ")
 						data_to_print += "\n"+roll_no_final + "," +name.text+","+sgpa.text+","
 					elif temp_count >1 and temp_count < semester_count:
-						sgpa =driver.find_element_by_id("lblCPI")
+						sgpa =driver.find_element_by_id("lblSPI")
 						data_to_print += sgpa.text+","
 						#print(sgpa.text, end=" ")
 					elif temp_count == semester_count:
@@ -105,7 +105,7 @@ driver.close()
 
 
 file_name = roll_no_temp + ".csv"
-data_to_print += "\nFor more work, find me @ Github.com/RoyalEagle73\n"
+data_to_print += "\nFor more work:, find me @ Github.com/RoyalEagle73\n"
 with open(file_name, "w") as result:
 	result.write(data_to_print)
 
