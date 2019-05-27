@@ -83,8 +83,8 @@ while roll_no_int!=final_roll+1:			## ( LIMIT CAN BE PLACED HERE )
 						data_to_print += sgpa.text+","
 						#print(sgpa.text, end=" ")
 					elif temp_count == semester_count:
-						sgpa =driver.find_element_by_id("lblCPI")
-						cgpa = driver.find_element_by_id("lblSPI")
+						sgpa =driver.find_element_by_id("lblSPI")
+						cgpa = driver.find_element_by_id("lblCPI")
 						data_to_print += sgpa.text+","+cgpa.text
 
 					temp_count += 1
