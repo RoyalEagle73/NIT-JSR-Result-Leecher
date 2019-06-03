@@ -1,5 +1,8 @@
 # NIT-JSR-Result-Leecher
 
+## MAINTENANCE UPDATE :
+    GUI executable file not available for v2.0, it will be uploaded soon.
+
 ## HOW TO USE:
 
 ### SCRIPT :
