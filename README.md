@@ -1,5 +1,8 @@
 # NIT-JSR-Result-Leecher
 
+## SPECIAL THANKS FOR PROVIDING WNDOWS EXECUTABLE FILE
+[Mohit Tarani](https://github.com/hitman96)
+
 ## MAINTENANCE UPDATE :
     GUI executable file not available for v2.0, it will be uploaded soon.
 
