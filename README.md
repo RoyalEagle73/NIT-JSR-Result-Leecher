@@ -1,5 +1,8 @@
 # NIT-JSR-Result-Leecher
 
+## Update-2020
+Only Python Script is working currently due to website changes by NIT JSR Administration.
+
 ## SPECIAL THANKS FOR PROVIDING WINDOWS EXECUTABLE FILE
 [Mohit Tarani](https://github.com/hitman96)
 
